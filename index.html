@@ -2,27 +2,37 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Weather Finder</title>
+    <title> Montanas aka Monzzy poopoo aka the most buetiful girl in the world Weather Finder</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Chart.js for temperature graph -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
+
   <body>
-    <h1>Weather Finder</h1>
+    <div class="container">
+      <h1>Montanas aka Monzzy poopoo aka the most buetiful girl in the world Weather Finder</h1>
 
-    <label>
-      Location:
-      <input id="location" placeholder="Enter city (e.g. London)" />
-    </label>
-    <br /><br />
+      <label>
+        Location:
+        <input id="location" placeholder="Enter city (e.g. London)" />
+      </label>
+      <br /><br />
 
-    <label>
-      Date:
-      <input id="date" type="date" />
-    </label>
-    <br /><br />
+      <label>
+        Date:
+        <input id="date" type="date" />
+      </label>
+      <br /><br />
 
-    <button onclick="getWeather()">Get Weather</button>
+      <button onclick="getWeather()">Get Weather</button>
 
-    <h2>Result</h2>
-    <pre id="output">Enter a location and date, then click "Get Weather".</pre>
+      <h2>Result</h2>
+      <pre id="output">Enter a location and date, then click "Get Weather".</pre>
+
+      <!-- Temperature Chart -->
+      <canvas id="tempChart" width="400" height="200"></canvas>
+    </div>
 
     <script src="script.js"></script>
   </body>
